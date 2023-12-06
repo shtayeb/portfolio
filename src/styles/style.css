@@ -24,7 +24,8 @@ body {
 	 color: #03F;
 }
  html.contrast a:visited {
-	 color: #7d013e;
+	 /* color: #7d013e; */
+	 color:rgba(150, 71, 214)
 }
  html.contrast span.wr {
 	 color: #800;
@@ -57,7 +58,8 @@ body {
 		 color: #00a2e7;
 	}
 	 html.inverted a:visited {
-		 color: #ca1a70;
+		 /* color: #ca1a70; */
+		 color:rgba(150, 71, 214)
 	}
 	 html.inverted span.wr {
 		 color: #d24637;
@@ -89,7 +91,8 @@ body {
 		 color: #44c7ff;
 	}
 	 html.inverted.contrast a:visited {
-		 color: #e9579e;
+		 /* color: #e9579e; */
+		 color:rgba(150, 71, 214)
 	}
 	 html.inverted.contrast span.wr {
 		 color: #db695d;
@@ -123,7 +126,8 @@ body {
 		 color: #00a2e7;
 	}
 	 html:not(.inverted) a:visited {
-		 color: #ca1a70;
+		 /* color: #ca1a70; */
+		 color:rgba(150, 71, 214)
 	}
 	 html:not(.inverted) span.wr {
 		 color: #d24637;
@@ -155,7 +159,8 @@ body {
 		 color: #44c7ff;
 	}
 	 html:not(.inverted).contrast a:visited {
-		 color: #e9579e;
+		 /* color: #e9579e; */
+		 color:rgba(150, 71, 214)
 	}
 	 html:not(.inverted).contrast span.wr {
 		 color: #db695d;
@@ -171,7 +176,8 @@ body {
 	 color: #07A;
 }
  a:visited {
-	 color: #941352;
+	 /* color: #941352; */
+	 color:rgba(150, 71, 214)
 }
  .noselect {
 	 -webkit-touch-callout: none;
