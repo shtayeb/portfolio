@@ -8,3 +8,6 @@ Just clone it and use it.
 Source of [The Best Motherfucking Website](https://thebestmotherfucking.website)  
 Based on [motherfuckingwebsite](http://motherfuckingwebsite.com/) and [bettermotherfuckingwebsite](http://bettermotherfuckingwebsite.com/)
 
+## TODO
+- Addd detailed project pages and list all the project with their demos and urls
+- Make details pages for project that are necessary
