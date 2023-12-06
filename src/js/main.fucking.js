@@ -1,10 +1,4 @@
 'use strict';
-// Latest blog posts
-const blogPostsContainer = document.querySelector('.blog_posts');
-
-
-
-
 // I wish I could have used ES6 extravaganza, but not everyone supports it :(
 let rbw = document.getElementById('rbw'),
   currentHue = 0,
@@ -36,13 +30,6 @@ function createControls() {
   document.body.appendChild(nightModeButton);
 }
 
-// function doThatFuckingColorThing() {
-//   console.log("test")
-//   let color = 'hsl(' + currentHue + ', 80%, 60%)',
-//     nextHue = currentHue + hueAddition;
-//   currentHue = nextHue > 360 ? 0 : nextHue;
-//   setTimeout(doThatFuckingColorThing, rainbowTiming);
-// }
 
 function someControl(id, textArr, className) {
   /* You see? No fucking jQuery needed, check:
@@ -73,11 +60,12 @@ function addInvertedControl() {
 }
 
 createControls();
-// doThatFuckingColorThing();
 addContrastControl();
 addInvertedControl();
 
 
+// Latest blog posts
+const blogPostsContainer = document.querySelector('.blog_posts');
 try {
   const response = await fetch(
     'https://blog.shahryartayeb.com/api/featured-posts'
