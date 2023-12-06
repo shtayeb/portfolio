@@ -396,3 +396,6 @@ body {
 	 font-size: 0.9em;
 }
  
+.center{
+	margin: auto;
+}
