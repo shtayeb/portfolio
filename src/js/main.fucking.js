@@ -36,7 +36,7 @@ function someControl(id, textArr, className) {
    * http://www.vanilla-js.com/
    * http://jsperf.com/getelementbyid-vs-jquery-id/44
    */
-  let el = document.getElementsByTagName('html')[0].style["filter"] = "invert(1)";
+  let el = document.getElementsByTagName("html")[0];
   let acbox = document.getElementById(id),
     textNode = acbox.firstChild,
     toggled = false;
