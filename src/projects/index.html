@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <meta name="author" content="Shahryar Tayeb">
+    <meta name="description" content="SHTB Blog">
+    <link rel="alternate" href="/atom.xml" type="application/atom+xml">
+    <title>5 Weird JavaScript Cases Explained | SHTB Blog</title>
+
+
+    <meta name="description" content="" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+      <meta property="og:description" content="SHTB Blog is an open platform where readers can find latest articles and tutorial about technology and software development." />
+
+    <meta property="og:image" content="https://blog.shahryartayeb.com/assets/images/shtb3.webp" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:description" content="SHTB Blog is an open platform where readers can find latest articles and tutorial about technology and software development." />
+    <meta property="twitter:image" content="https://blog.shahryartayeb.com/assets/images/shtb3.webp" />
+
+
+
+    <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-M2FDCZ73');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <link rel="stylesheet" type="text/css" href="../../styles/style.css" />
+
+    <!-- Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../../img/logo_dark.svg" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/logo_dark.svg"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/logo_dark.svg"
+    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/js.min.js"></script>
+    <script>hljs.highlightAll();</script>
+  </head>
+
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M2FDCZ73"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+    
+
+       <main class="main">
+      <!-- 1 - Crypto buddy  -->
+      <section class="about section" id="">
+        <div class="about__container container grid">
+          <img
+            src="/assets/img/projects/ecom3.png"
+            alt="mobile"
+            width="100px"
+            height="100px"
+            class="about__img"
+          />
+          <div class="about__data">
+            <h3 class="portfolio__title">Full E-Commerce MERN Stack</h3>
+            <p class="about__description">
+              Full E-Commerce app built with MERN Stack and Stripe API.<br /><br />
+              Admin Dashboard <br />(username: eadmin)<br />
+              (password : 1234567)
+            </p>
+
+            <div class="about__info">
+              <div class="frame-btn">
+                <span class="about__info-name"> React</span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Redux </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Express </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> mongodb </span>
+              </div>
+            </div>
+
+            <div class="about__info">
+              <a
+                class="app-btn blu flex vert"
+                target="_blank"
+                href="https://eshopadminshtb.netlify.app/"
+              >
+                <p style="padding: unset; margin: unset">
+                  Demo <br />
+                  <span class="big-txt">Admin Dashboard</span>
+                </p>
+              </a>
+              <a
+                class="app-btn blu flex vert"
+                target="_blank"
+                href="https://e-shop-shtb.herokuapp.com/"
+              >
+                <p style="padding: unset; margin: unset">
+                  Demo <br />
+                  <span class="big-txt">Visit Website</span>
+                </p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 1 - Crypto buddy  -->
+      <section class="about section" id="">
+        <div class="about__container container grid">
+          <iframe
+            width="560"
+            height="315"
+            class="about__img"
+            src="https://www.youtube.com/embed/93HHDl0oRAU"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <div class="about__data">
+            <h3 class="portfolio__title">Crypto Buddy:Price & News</h3>
+            <p class="about__description">
+              Bitcoin and cryptocurrency market, alerts, and real time prices of
+              your favorite cryptocurrency. Add cryptocurrency to your list,
+              remove and set alert for your specific target and get notified
+              when it hits your target price.
+            </p>
+            <div class="about__info">
+              <div class="frame-btn">
+                <span class="about__info-name"> React Native </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Redux </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Laravel </span>
+              </div>
+            </div>
+
+            <a
+              class="app-btn blu flex vert"
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.shahryartayeb.cryptobuddy"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="appstore-logo"
+                width="25"
+                height="25"
+              >
+                <path
+                  d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"
+                />
+              </svg>
+              <p style="padding: unset; margin: unset">
+                Get it on <br />
+                <span class="big-txt">Google Play</span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- 11 - Spotify Clone  -->
+      <section class="about section" id="">
+        <div class="about__container container grid">
+          <img
+            src="/assets/img/projects/spotify.png"
+            alt="mobile"
+            width="100px"
+            height="100px"
+            class="about__img"
+          />
+          <div class="about__data">
+            <h3 class="portfolio__title">Spotify Clone</h3>
+            <p class="about__description">
+              A clone of spotify built with Next Js. it uses the spotify API to
+              Login,fetch and play your songs. it also includes next-auth and
+              newly announced next js feature, Middleware.
+            </p>
+            <div class="about__info">
+              <div class="frame-btn">
+                <span class="about__info-name"> Next JS </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Tailwind CSS </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Recoil JS </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Spotify </span>
+              </div>
+            </div>
+
+            <a
+              class="app-btn blu flex vert"
+              target="_blank"
+              href="https://spotify-clone-nextjs-psi.vercel.app/"
+            >
+              <p style="padding: unset; margin: unset">
+                Demo <br />
+                <span class="big-txt">Visit Website</span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- 11 - ECA Website  -->
+      <section class="about section" id="">
+        <div class="about__container container grid">
+          <img
+            src="/assets/img/projects/eca.jpg"
+            alt="mobile"
+            width="100px"
+            height="100px"
+            class="about__img"
+          />
+          <div class="about__data">
+            <h3 class="portfolio__title">
+              Eagle Wise Chartered Accountants(ECA) Website
+            </h3>
+            <p class="about__description">Client website development.</p>
+            <div class="about__info">
+              <div class="frame-btn">
+                <span class="about__info-name"> React </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Bootstrap </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Email JS </span>
+              </div>
+            </div>
+
+            <a
+              class="app-btn blu flex vert"
+              target="_blank"
+              href="http://eca.org.af"
+            >
+              <p style="padding: unset; margin: unset">
+                Demo <br />
+                <span class="big-txt">Visit Website</span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- 2 - img to pdf  -->
+      <section class="about section" id="">
+        <div class="about__container container grid">
+          <iframe
+            width="560"
+            height="315"
+            class="about__img"
+            src="https://www.youtube.com/embed/TnpnrMoM4oo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="about__data">
+            <h3 class="portfolio__title">Image to PDF Converter</h3>
+            <p class="about__description">
+              Convert your images into PDF offline with Image to PDF Converter.
+              Automatically compress the Images best for sharing and for email
+              attachments. Simple and Interactive User Interface with modern
+              design.
+            </p>
+            <div class="about__info">
+              <div class="frame-btn">
+                <span class="about__info-name"> React Native </span>
+              </div>
+            </div>
+
+            <a
+              class="app-btn blu flex vert"
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.shahryartayeb.imgtopdf"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="appstore-logo"
+                width="25"
+                height="25"
+              >
+                <path
+                  d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"
+                />
+              </svg>
+              <p style="padding: unset; margin: unset">
+                Get it on <br />
+                <span class="big-txt">Google Play</span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- 3 - secret notes  -->
+      <section class="about section" id="">
+        <div class="about__container container grid">
+          <iframe
+            width="560"
+            height="315"
+            class="about__img"
+            src="https://www.youtube.com/embed/6NZuFNNrcUw"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="about__data">
+            <h3 class="portfolio__title">Secret Notes</h3>
+            <p class="about__description">
+              A simple notes application with modern UI design and ability to
+              take biometric protected notes that only authorized person can
+              access it.
+            </p>
+            <div class="about__info">
+              <div class="frame-btn">
+                <span class="about__info-name"> React Native </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Sqlite </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Context API </span>
+              </div>
+            </div>
+
+            <a
+              class="app-btn blu flex vert"
+              target="_blank"
+              href="https://play.google.com/store/apps/details?id=com.shahryartayeb.secretnotes"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="appstore-logo"
+                width="25"
+                height="25"
+              >
+                <path
+                  d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"
+                />
+              </svg>
+              <p style="padding: unset; margin: unset">
+                Get it on <br />
+                <span class="big-txt">Google Play</span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- 4 - Khudkar Questions  -->
+      <section class="about section" id="">
+        <div class="about__container container grid">
+          <iframe
+            width="560"
+            height="315"
+            class="about__img"
+            src="https://www.youtube.com/embed/gQMqxCko-gM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="about__data">
+            <h3 class="portfolio__title">Khudkar Questions</h3>
+            <p class="about__description">
+              Khudkar Questions is an Android and IOS app developed with React
+              Native . In this app people can post questions about different
+              topics and users can answer them. This is a full social media app
+              with profile management , post management and etc.
+            </p>
+            <div class="about__info">
+              <div class="frame-btn">
+                <span class="about__info-name"> React Native </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Firebase </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Context API </span>
+              </div>
+            </div>
+
+            <a class="app-btn blu flex vert" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="appstore-logo"
+                width="25"
+                height="25"
+              >
+                <path
+                  d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"
+                />
+              </svg>
+              <p style="padding: unset; margin: unset">
+                Get it on <br />
+                <span class="big-txt">Google Play</span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- 5 - Food Donation  -->
+      <section class="about section" id="">
+        <div class="about__container container grid">
+          <iframe
+            width="560"
+            height="315"
+            class="about__img"
+            src="https://www.youtube.com/embed/_oB9omNN5FE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="about__data">
+            <h3 class="portfolio__title">Food Donation</h3>
+            <p class="about__description">
+              Food Donation users can post donations and also see the neerest
+              food donation and get its location. It is equiped with push
+              notifications , realtime updates and it uses firebase as its
+              backend.
+            </p>
+            <div class="about__info">
+              <div class="frame-btn">
+                <span class="about__info-name"> React Native </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Firebase </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Context API </span>
+              </div>
+            </div>
+
+            <a class="app-btn blu flex vert" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                class="appstore-logo"
+                width="25"
+                height="25"
+              >
+                <path
+                  d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"
+                />
+              </svg>
+              <p style="padding: unset; margin: unset">
+                Get it on <br />
+                <span class="big-txt">Google Play</span>
+              </p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- 6 - Danesh community  -->
+      <section class="about section" id="">
+        <div class="about__container container grid">
+          <iframe
+            width="560"
+            height="315"
+            class="about__img"
+            src="https://www.youtube.com/embed/fgHhisMMSfI"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <div class="about__data">
+            <h3 class="portfolio__title">Danesh Community</h3>
+            <p class="about__description">
+              Danesh Community is a full social media app built with laravel and
+              Vue js. users can create account,post, comment, like posts and
+              comments, save posts, follow users , post books , download books
+              and etc. All features are implemented as an API too.
+            </p>
+            <div class="about__info">
+              <div class="frame-btn">
+                <span class="about__info-name"> Laravel </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Bootstrap </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Mysql </span>
+              </div>
+              <div class="frame-btn">
+                <span class="about__info-name"> Vue Js </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================= SERVICES ===================== -->
+
+      <section class="services section" id="">
+        <h2 class="section__title">Other</h2>
+        <span class="section__subtitle"> Projects </span>
+
+        <div class="services__container container grid">
+          <!-- ========================= SERVICES 1 ===================== -->
+          <div class="services__content">
+            <div>
+              <img src="/assets/img/projects/pharmacy_logo.jpg" alt="web" />
+              <!-- <i class="uil uil-web-grid services__icon"></i> -->
+              <h3 class="services__title">Pharmacy MIS</h3>
+            </div>
+
+            <a
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
+              target="_blank"
+              href="https://pharmacy.khudkar.com/"
+            >
+              Demo
+              <i class="uil uil-arrow-right button__icon"></i>
+            </a>
+          </div>
+
+          <!-- ========================= SERVICES 3 ===================== -->
+          <div class="services__content">
+            <div>
+              <img
+                src="/assets/img/services/domain.svg"
+                alt="hosting"
+                width="100px"
+                height="100px"
+              />
+              <h3 class="services__title">MIS for AHECS</h3>
+            </div>
+
+            <span
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
+            >
+              Demo
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+          </div>
+          <!-- ========================= SERVICES 4 ===================== -->
+          <div class="services__content">
+            <div>
+              <a href="/hosting">
+                <img
+                  src="http://khudkar.com/images/myImg/dcapp.jpg"
+                  alt="daneshapp"
+                  width="100px"
+                  height="100px"
+                />
+                <h3 class="services__title">Danesh APP (React Native)</h3>
+              </a>
+            </div>
+
+            <span
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
+            >
+              Demo
+              <i class="uil uil-arrow-right button__icon"></i>
+            </span>
+          </div>
+          <!-- ========================= SERVICES 5 ===================== -->
+          <div class="services__content">
+            <div>
+              <a href="/hosting">
+                <img
+                  src="/assets/img/services/domain.svg"
+                  alt="daneshapp"
+                  width="100px"
+                  height="100px"
+                />
+                <h3 class="services__title">Hosting Service Landing Page</h3>
+              </a>
+            </div>
+
+            <a
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
+              target="_blank"
+              href="/hosting"
+            >
+              Demo
+              <i class="uil uil-arrow-right button__icon"></i>
+            </a>
+          </div>
+          <!-- ========================= SERVICES 6 ===================== -->
+          <div class="services__content">
+            <div>
+              <a href="/hosting">
+                <img
+                  src="/assets/img/projects/blog.png"
+                  alt="daneshapp"
+                  width="100px"
+                  height="100px"
+                />
+                <h3 class="services__title">Blog and Admin Dashboard</h3>
+              </a>
+            </div>
+
+            <a
+              class="
+                button button--flex button--small button--link
+                services__button
+              "
+              target="_blank"
+              href="https://blog.shahryartayeb.com"
+            >
+              Demo
+              <i class="uil uil-arrow-right button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================ PROJECTS IN MIND ========================= -->
+
+      <section class="project section">
+        <div class="project__bg">
+          <div class="project__container container grid">
+            <div class="project__data">
+              <h2 class="project__title">You Have a New Project</h2>
+              <p class="project__description">
+                Contact Me Now and Get a 30% Discount on Your New Project
+              </p>
+              <a href="#contact" class="button button--flex button--white">
+                Contact Me
+                <i class="uil uil-message project__icon button__icon"></i>
+              </a>
+            </div>
+
+            <img
+              src="/assets/img/test.png"
+              alt="project image"
+              class="project__img"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+  
+    <br/>
+    <br/>
+
+
+    <footer>
+      <a class="kopimi" href="#" title="Kopimi">
+        <img class="kopimi" src="../../img/logo_dark.svg" title="SHTB Logo" />
+      </a>
+    </footer>
+
+    
+  </body>
+
+</html>
