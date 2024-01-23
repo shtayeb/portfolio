@@ -65,24 +65,24 @@ addInvertedControl();
 
 
 // Latest blog posts
-// const blogPostsContainer = document.querySelector('.blog_posts');
-// try {
-//   const response = await fetch(
-//     'https://blog.shahryartayeb.com/api/featured-posts'
-//   );
-//   const posts = await response.json();
+const blogPostsContainer = document.querySelector('.blog_posts');
+try {
+  const response = await fetch(
+    'https://blog.shahryartayeb.com/api/featured-posts'
+  );
+  const posts = await response.json();
 
-//   posts.forEach((post) => {
-//     // insert into the page
-//     const blogPostMarkup = `
-// <li>
-//     <a href="https://blog.shahryartayeb.com/post/${post.slug}">
-//       ${post.title}
-//     </a>
-// </li>
-// `;
-//     blogPostsContainer.insertAdjacentHTML('afterbegin', blogPostMarkup);
-//   });
-// } catch (error) {
-//   console.log(error);
-// }
+  posts.forEach((post) => {
+    // insert into the page
+    const blogPostMarkup = `
+<li>
+    <a href="https://blog.shahryartayeb.com/post/${post.slug}">
+      ${post.title}
+    </a>
+</li>
+`;
+    blogPostsContainer.insertAdjacentHTML('afterbegin', blogPostMarkup);
+  });
+} catch (error) {
+  console.log(error);
+}
