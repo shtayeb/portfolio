@@ -399,3 +399,7 @@ body {
 .center{
 	margin: auto;
 }
+
+.about__img {
+	width: 100%;
+}
