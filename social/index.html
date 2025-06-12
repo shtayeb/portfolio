@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Feed - Your Name</title>
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Social Feed - Your Name">
+    <meta property="og:description" content="Follow my latest updates on Twitter, LinkedIn, and GitHub">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/social">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Inter Font -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-200">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="/" class="text-xl font-bold">Your Name</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/blog" class="hover:text-primary-600 dark:hover:text-primary-400">Blog</a>
+                    <a href="/projects" class="hover:text-primary-600 dark:hover:text-primary-400">Projects</a>
+                    <a href="/social" class="text-primary-600 dark:text-primary-400">Social</a>
+                    <a href="/contact" class="hover:text-primary-600 dark:hover:text-primary-400">Contact</a>
+                    <button id="theme-toggle" class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800">
+                        <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"/>
+                        </svg>
+                        <svg class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Social Feed Header -->
+    <header class="pt-32 pb-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl font-bold mb-4">Social Feed</h1>
+            <p class="text-xl text-gray-600 dark:text-gray-400">Follow my latest updates on Twitter, LinkedIn, and GitHub</p>
+        </div>
+    </header>
+
+    <!-- Social Feed Grid -->
+    <main class="py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Twitter Feed -->
+                <section class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm">
+                    <div class="p-6 border-b border-gray-200 dark:border-gray-800">
+                        <div class="flex items-center gap-4">
+                            <svg class="w-8 h-8 text-[#1DA1F2]" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                            </svg>
+                            <div>
+                                <h2 class="text-xl font-semibold">Twitter</h2>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">@yourusername</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divide-y divide-gray-200 dark:divide-gray-800">
+                        <!-- Tweet 1 -->
+                        <article class="p-6">
+                            <div class="flex items-start gap-4">
+                                <img src="https://via.placeholder.com/48" alt="Your Name" class="w-12 h-12 rounded-full">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="font-semibold">Your Name</span>
+                                        <span class="text-gray-600 dark:text-gray-400">@yourusername</span>
+                                        <span class="text-gray-600 dark:text-gray-400">•</span>
+                                        <time class="text-gray-600 dark:text-gray-400">2h</time>
+                                    </div>
+                                    <p class="mb-4">Just published a new article about React and TypeScript! Check it out and let me know what you think. #webdev #react #typescript</p>
+                                    <div class="flex items-center gap-6 text-gray-600 dark:text-gray-400">
+                                        <button class="flex items-center gap-2 hover:text-primary-600 dark:hover:text-primary-400">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                            </svg>
+                                            <span>24</span>
+                                        </button>
+                                        <button class="flex items-center gap-2 hover:text-primary-600 dark:hover:text-primary-400">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                            </svg>
+                                            <span>12</span>
+                                        </button>
+                                        <button class="flex items-center gap-2 hover:text-primary-600 dark:hover:text-primary-400">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                            </svg>
+                                            <span>48</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Tweet 2 -->
+                        <article class="p-6">
+                            <div class="flex items-start gap-4">
+                                <img src="https://via.placeholder.com/48" alt="Your Name" class="w-12 h-12 rounded-full">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="font-semibold">Your Name</span>
+                                        <span class="text-gray-600 dark:text-gray-400">@yourusername</span>
+                                        <span class="text-gray-600 dark:text-gray-400">•</span>
+                                        <time class="text-gray-600 dark:text-gray-400">5h</time>
+                                    </div>
+                                    <p class="mb-4">Excited to announce that my new project is now live! Built with React, Node.js, and MongoDB. Check it out and let me know your thoughts! #webdev #javascript</p>
+                                    <div class="flex items-center gap-6 text-gray-600 dark:text-gray-400">
+                                        <button class="flex items-center gap-2 hover:text-primary-600 dark:hover:text-primary-400">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                            </svg>
+                                            <span>18</span>
+                                        </button>
+                                        <button class="flex items-center gap-2 hover:text-primary-600 dark:hover:text-primary-400">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                                            </svg>
+                                            <span>8</span>
+                                        </button>
+                                        <button class="flex items-center gap-2 hover:text-primary-600 dark:hover:text-primary-400">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                            </svg>
+                                            <span>32</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- GitHub Activity -->
+                <section class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm">
+                    <div class="p-6 border-b border-gray-200 dark:border-gray-800">
+                        <div class="flex items-center gap-4">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                            </svg>
+                            <div>
+                                <h2 class="text-xl font-semibold">GitHub Activity</h2>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">@yourusername</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divide-y divide-gray-200 dark:divide-gray-800">
+                        <!-- Activity 1 -->
+                        <article class="p-6">
+                            <div class="flex items-start gap-4">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="font-semibold">Pushed to main</span>
+                                        <span class="text-gray-600 dark:text-gray-400">•</span>
+                                        <time class="text-gray-600 dark:text-gray-400">3h ago</time>
+                                    </div>
+                                    <p class="mb-2">Updated README with new project documentation</p>
+                                    <a href="#" class="text-primary-600 dark:text-primary-400 hover:underline">yourusername/project-name</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Activity 2 -->
+                        <article class="p-6">
+                            <div class="flex items-start gap-4">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="font-semibold">Created repository</span>
+                                        <span class="text-gray-600 dark:text-gray-400">•</span>
+                                        <time class="text-gray-600 dark:text-gray-400">1d ago</time>
+                                    </div>
+                                    <p class="mb-2">Initial commit for new project</p>
+                                    <a href="#" class="text-primary-600 dark:text-primary-400 hover:underline">yourusername/new-project</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- LinkedIn Updates -->
+                <section class="bg-white dark:bg-gray-900 rounded-xl overflow-hidden shadow-sm">
+                    <div class="p-6 border-b border-gray-200 dark:border-gray-800">
+                        <div class="flex items-center gap-4">
+                            <svg class="w-8 h-8 text-[#0A66C2]" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/>
+                            </svg>
+                            <div>
+                                <h2 class="text-xl font-semibold">LinkedIn Updates</h2>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">Your Name</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="divide-y divide-gray-200 dark:divide-gray-800">
+                        <!-- Update 1 -->
+                        <article class="p-6">
+                            <div class="flex items-start gap-4">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="font-semibold">Shared an article</span>
+                                        <span class="text-gray-600 dark:text-gray-400">•</span>
+                                        <time class="text-gray-600 dark:text-gray-400">2d ago</time>
+                                    </div>
+                                    <p class="mb-4">Excited to share my latest article about modern web development practices and how they're shaping the future of the industry.</p>
+                                    <div class="flex items-center gap-4 text-gray-600 dark:text-gray-400">
+                                        <button class="flex items-center gap-2 hover:text-primary-600 dark:hover:text-primary-400">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"/>
+                                            </svg>
+                                            <span>24</span>
+                                        </button>
+                                        <button class="flex items-center gap-2 hover:text-primary-600 dark:hover:text-primary-400">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                            </svg>
+                                            <span>8</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- Update 2 -->
+                        <article class="p-6">
+                            <div class="flex items-start gap-4">
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <span class="font-semibold">Posted an update</span>
+                                        <span class="text-gray-600 dark:text-gray-400">•</span>
+                                        <time class="text-gray-600 dark:text-gray-400">4d ago</time>
+                                    </div>
+                                    <p class="mb-4">Thrilled to announce that I'll be speaking at the upcoming Web Development Conference about building scalable applications with React and TypeScript!</p>
+                                    <div class="flex items-center gap-4 text-gray-600 dark:text-gray-400">
+                                        <button class="flex items-center gap-2 hover:text-primary-600 dark:hover:text-primary-400">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"/>
+                                            </svg>
+                                            <span>42</span>
+                                        </button>
+                                        <button class="flex items-center gap-2 hover:text-primary-600 dark:hover:text-primary-400">
+                                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                                            </svg>
+                                            <span>15</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 border-t border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-xl font-bold mb-4">Your Name</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Building the future of web applications and sharing knowledge along the way.</p>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                            <span class="sr-only">GitHub</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">
+                            <span class="sr-only">LinkedIn</span>
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/blog" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">Blog</a></li>
+                        <li><a href="/projects" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">Projects</a></li>
+                        <li><a href="/social" class="text-primary-600 dark:text-primary-400">Social</a></li>
+                        <li><a href="/contact" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="/media" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">Media Kit</a></li>
+                        <li><a href="/privacy" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 text-center text-gray-600 dark:text-gray-400">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        // Check for saved theme preference, otherwise use system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark')
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+
+        // Theme toggle handler
+        document.getElementById('theme-toggle').addEventListener('click', function() {
+            if (localStorage.theme === 'dark') {
+                localStorage.theme = 'light'
+                document.documentElement.classList.remove('dark')
+            } else {
+                localStorage.theme = 'dark'
+                document.documentElement.classList.add('dark')
+            }
+        })
+    </script>
+</body>
+</html> 
