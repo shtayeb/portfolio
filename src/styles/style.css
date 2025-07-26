@@ -56,7 +56,7 @@ body {
 	}
 	 html.inverted a {
 		 color: #00a2e7;
-	}
+	}	
 	 html.inverted a:visited {
 		 /* color: #ca1a70; */
 		 color:rgba(150, 71, 214)
@@ -122,6 +122,11 @@ body {
 	 html:not(.inverted) blockquote::before {
 		 color: #b8b8b8;
 	}
+
+	html:not(.inverted) .blog_post_link{
+		color: #d9d9d9 !important;
+	}
+
 	 html:not(.inverted) a {
 		 color: #00a2e7;
 	}
@@ -402,4 +407,13 @@ body {
 
 .about__img {
 	width: 100%;
+}
+
+.blog_post_link{
+	color:#454545;
+	/* text-decoration: none; */
+}
+
+.blog_post_link:hover{
+	text-decoration: underline;
 }

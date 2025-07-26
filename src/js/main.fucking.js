@@ -72,7 +72,7 @@ try {
     // insert into the page
     const blogPostMarkup = `
 <li>
-    <a href="https://blog.shahryartayeb.com/post/${post.slug}">
+    <a href="https://shtb.dev/post/${post.slug}" class="blog_post_link">
       ${post.title}
     </a>
 </li>
