@@ -14,7 +14,6 @@
   <meta name="keywords" content="Shahryar Tayeb, Software Engineer,full-stack,CV,Portfolio,Japan,backend" />
   <meta name="author" content="Shahryar Tayeb" />
   <meta property="og:title" content="Shahryar Tayeb - Software Engineer" />
-  <!-- <meta property="og:description" content="Shahryar Tayeb, a software developer with 5+ years of experience currently based in Japan. Sharing insights on latest software development trends and building thoughtful products." /> -->
   <meta property="og:description"
     content="I’m Shahryar, a full‑stack developer currently living in Japan. I build web apps, explore new tools for fun, and share my thoughts on coding" />
   <meta property="og:image" content="./img/meta-2.jpg" />
@@ -31,21 +30,21 @@
   <link rel="stylesheet" type="text/css" href="styles/timeline.css" />
 
   <!-- Yeah, here's some tracking. Do you really wanna argue on this? !-->
- <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7EPF4BBT0R"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7EPF4BBT0R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-7EPF4BBT0R');
-</script>
+    gtag('config', 'G-7EPF4BBT0R');
+  </script>
 </head>
 
 <body>
-  <section>
-    <h1>
-      I am Shahryar Tayeb <i><small> FullStack Software Engineer </small> </i>
+  <section id="about">
+    <h1>I am Shahryar Tayeb
+    <span class="subtitle">FullStack Software Engineer</span>
     </h1>
     <br />
     <div class="fancyPositioning">
@@ -54,13 +53,6 @@
           <img src="https://avatars.githubusercontent.com/u/48182832?v=4" title="Shahryar Tayeb Headshot"
             alt="Shahryar Tayeb Headshot, wearing a green shirt, glasses with a white background" />
           <figcaption>2023 - Shahryar Tayeb</figcaption>
-          <p>
-            <a target="_blank" href="https://www.linkedin.com/in/shahryar-tayeb">LinkedIn</a> -
-            <a target="_blank" href="https://www.github.com/shtayeb">Github</a> -
-            <a target="_blank" href="https://twitter.com/shahryar_tayeb">Twitter</a>
-            -
-            <a target="_blank" href="https://blog.shahryartayeb.com/">Blog</a>
-          </p>
         </figure>
       </div>
       <div class="tleft">
@@ -85,7 +77,7 @@
   </section>
 
   <!-- Blog posts -->
-  <section>
+  <section id="blog">
     <h2>Latest blog posts</h2>
     <p>
       I write blog posts about FullStack development and other tutorials on my
@@ -101,10 +93,8 @@
   </section>
   <!-- Blog posts -->
 
-  <br />
-
   <!-- Skills -->
-  <section>
+  <section id="skills">
     <h2>Skills ?</h2>
     <p>
       I use/used the bellow technolgies to build software. I am not locked to
@@ -157,10 +147,9 @@
   </section>
 
   <!-- End of Skills -->
-  <br />
 
   <!-- Experience Timeline -->
-  <section>
+  <section id="experience">
     <h2>Experience</h2>
 
     <!-- Timeline -->
@@ -212,8 +201,6 @@
   </section>
   <!-- Timeline -->
 
-  <br />
-
   <!-- Qualifications -->
   <section>
     <h2>Qualifications</h2>
@@ -232,10 +219,8 @@
   </section>
   <!-- End of Qualifications -->
 
-  <br />
-
   <!-- Put Some projects Here -->
-  <section>
+  <section id="projects">
     <h2>Personal Projects</h2>
     <p>
       The list might be outdated because I am lazy and I dont like to add
@@ -244,132 +229,65 @@
       follow me on social media.
     </p>
 
-    <strong> Here are some of my projects: </strong>
-    <ul>
-      <li>
-        <strong>Youtube Transcript Extractor: <a href="https://chromewebstore.google.com/detail/tiny-youtube-transcript-e/ckdannejaobflfiabbmjakfmejciened">link</a></strong>
-        <p>
-          Extract and save YouTube video transcripts instantly with a single click.
-        </p>
-      </li>
-     
-      <li>
-        <strong>django-shell.nvim: <a href="https://github.com/shtayeb/django-shell.nvim">link</a></strong>
-        <p>A neovim plugin: seamless integration with Django commands and Shell within Neovim
-          Seamless integration with Django commands and shell within Neovim. 
-        </p>
-        <p>
-          This plugin leverages the power of Telescope to offer
-          an intuitive interface for executing Django commands and running Django shell code directly from your Neovim editor.
-        </p>
-      </li>
-      <li>
-        <strong> Organizer CLI: <a target="_blank" href="https://github.com/shtayeb/organizer">link</a>
-        </strong>
-        <p>
-          A CLI app build with GO that organizes files by their types and organize them in folders
-        </p>
-        <p>
-          Why? 
-          My download folder was getting cluttered with alot of files and I was scrolling alot to find the file that I wanted. so
-          I create this CLI app to organize my download folder priodically based on the file type of the files.
-        </p>
-      </li>
-
-      <li>
-        <strong> SHTB Blog (2022 - Present): <a target="_blank" href="https://blog.shahryartayeb.com">link</a>
-        </strong>
-        <p>
-          SHTB is an Online Learning/Blogging platform for developers. The
-          platform is built with Laravel, Inertia Js, Vue Js and Mysql. It has
-          been optimized for SEO, has a lighthouse score of 95+ in all
-          categories and gets 3k+ monthly visits.
-        </p>
-      </li>
-      <li>
-        <strong> Bookworm for Laravel (2023 - Present): <a target="_blank"
-            href="https://github.com/shtayeb/bookworm-for-laravel">repo</a> </strong>
-        <p>
-          It is a Laravel package that estimates reading time of a piece of
-          text. It has been featured in the laravel-news website.
-        </p>
-      </li>
-      <li>
-        <strong> StudyBuddy: <a href="https://github.com/shtayeb/Django-Studybudy">link</a></strong>
-        <p>
-          A Fullstack Django application for creating rooms and discussions around topics.
-        </p>
-      </li>
-      <li>
-        <strong> 
-          Google Play Store Profile
-        </strong>
-          (outdated, I haven't focused on mobile dev for a while): 
-          <a target="_blank" href="https://play.google.com/store/apps/dev?id=5527480123345093551">link</a>
-        <p>
-          Developed and published 3 Android apps on Google Play Store using
-          React native and Expo.
-        </p>
-        <ul>
-          <li>
-            Crypto Buddy
-            <p>
-              A Crypto Currency prices, news and notifications App. It uses an
-              external Crypto API to display prices and an internal news
-              scraper API built with laravel to display crypto news.
-            </p>
-          </li>
-
-          <li>
-            Img to PDF
-            <p>
-              An offline image to pdf converter built with Bare React Native
-              and Native Java Code to convert images to PDF.
-            </p>
-          </li>
-
-          <li>
-            Secret Notes
-            <p>
-              A simple notes application with modern UI design and ability to
-              take biometric protected notes that only authorized persons can
-              access
-            </p>
-          </li>
-        </ul>
-      </li>
-
-      <li>
-        <strong>
-          Lightroom Classic CC Technical Bootcamp (2020 - 2021): <a
-            href="https://blog.shahryartayeb.com/courses/lightroom-classic-cc-technical-bootcamp">link</a>
-        </strong>
-        <p>
-          A 4-hour Udemy course, teaching Adobe Lightroom basics for
-          photographers to edit professional photos
-        </p>
-      </li>
-    </ul>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Youtube Transcript Extractor</h3>
+            <p>Extract and save YouTube video transcripts instantly with a single click.</p>
+            <a href="https://chromewebstore.google.com/detail/tiny-youtube-transcript-e/ckdannejaobflfiabbmjakfmejciened">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>django-shell.nvim</h3>
+            <p>A neovim plugin for seamless integration with Django commands and shell within Neovim.</p>
+            <a href="https://github.com/shtayeb/django-shell.nvim">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Organizer CLI</h3>
+            <p>A CLI app built with Go that organizes files by their types into folders.</p>
+            <a href="https://github.com/shtayeb/organizer">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>SHTB Blog</h3>
+            <p>An online learning/blogging platform for developers built with Laravel, Inertia.js, and Vue.js.</p>
+            <a href="https://shtb.dev">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Bookworm for Laravel</h3>
+            <p>A Laravel package that estimates the reading time of a piece of text.</p>
+            <a href="https://github.com/shtayeb/bookworm-for-laravel">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>StudyBuddy</h3>
+            <p>A Fullstack Django application for creating rooms and discussions around topics.</p>
+            <a href="https://github.com/shtayeb/Django-Studybudy">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Google Play Store Profile</h3>
+            <p>Developed and published 3 Android apps on Google Play Store using React Native and Expo.</p>
+            <a href="https://play.google.com/store/apps/dev?id=5527480123345093551">View Profile</a>
+        </div>
+        <div class="project-card">
+            <h3>Lightroom Classic CC Technical Bootcamp</h3>
+            <p>A 4-hour Udemy course, teaching Adobe Lightroom basics for photographers.</p>
+            <a href="https://blog.shahryartayeb.com/courses/lightroom-classic-cc-technical-bootcamp">View Course</a>
+        </div>
+    </div>
     <!-- End projects -->
   </section>
 
   <br/>
 
-  <section>
+  <section id="contact">
     <h2>Contact me</h2>
-    <p>
-      <a target="_blank" href="https://www.linkedin.com/in/shahryar-tayeb">LinkedIn</a> -
-      <a target="_blank" href="https://www.github.com/shtayeb">Github</a> -
+    <div class="social-links">
+      <a target="_blank" href="https://www.linkedin.com/in/shahryar-tayeb">LinkedIn</a>
+      <a target="_blank" href="https://www.github.com/shtayeb">Github</a>
       <a target="_blank" href="https://twitter.com/shahryar_tayeb">Twitter</a>
-      -
       <a target="_blank" href="https://blog.shahryartayeb.com/">Blog</a>
-    </p>
+    </div>
   </section>
 
   <footer>
-    <a class="kopimi" href="#" title="Kopimi">
-      <img class="kopimi" src="./img/logo_dark.svg" title="SHTB Logo" />
-    </a>
+    <p>&copy; 2025 Shahryar Tayeb</p>
   </footer>
 
   <script type="module" src="js/main.fucking.js" type="text/javascript"></script>

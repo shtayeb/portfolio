@@ -72,12 +72,10 @@ try {
     // insert into the page
     const blogPostMarkup = `
 <li>
-    <a href="https://shtb.dev/post/${post.slug}" class="blog_post_link">
-      ${post.title}
-    </a>
+    <a href="https://shtb.dev/post/${post.slug}" target="_blank" rel="noopener noreferrer" class="blog_post_link">${post.title}</a>
 </li>
 `;
-    blogPostsContainer.insertAdjacentHTML("afterbegin", blogPostMarkup);
+    blogPostsContainer.insertAdjacentHTML("beforeend", blogPostMarkup);
   });
 } catch (error) {
   console.log(error);
