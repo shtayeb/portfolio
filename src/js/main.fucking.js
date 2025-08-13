@@ -64,19 +64,31 @@ addInvertedControl();
 
 // Latest blog posts
 const blogPostsContainer = document.querySelector(".blog_posts");
+
 try {
   const response = await fetch("https://shtb.dev/api/featured-posts");
   const posts = await response.json();
+  
+  let blogPostMarkup = ``
 
   posts.forEach((post) => {
     // insert into the page
-    const blogPostMarkup = `
+     blogPostMarkup += `
 <li>
-    <a href="https://shtb.dev/post/${post.slug}" target="_blank" rel="noopener noreferrer" class="blog_post_link">${post.title}</a>
+    <a href="https://shtb.dev/post/${post.slug}" target="_blank" class="blog_post_link">${post.title}</a>
 </li>
 `;
-    blogPostsContainer.insertAdjacentHTML("beforeend", blogPostMarkup);
+
   });
+
+  blogPostsContainer.innerHTML = blogPostMarkup;
 } catch (error) {
   console.log(error);
+  const blogPostMarkup = `
+  <li>
+      Something went wrong! Please visit my <a href="https://shtb.dev" target="_blank" class="blog_post_link">shtb.dev</a> directly
+  </li>
+  `;
+  // Clear skeleton even on error to prevent infinite loading state
+  blogPostsContainer.innerHTML = blogPostMarkup;
 }
