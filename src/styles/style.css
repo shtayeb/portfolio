@@ -600,29 +600,23 @@ html:not(.inverted) .project-card a {
 
 #contact {
     text-align: center;
-    padding: 2em 1em;
 }
 
-#contact h2 {
-    font-size: 1.5rem;
+.social_links {
     margin-bottom: 1em;
 }
 
-.social-links {
-    margin-bottom: 1em;
-}
-
-.social-links a {
-    margin: 0 0.5em;
+.social_links a {
     color: var(--light-link);
     text-decoration: none;
+    margin:0 0.5em;
 }
 
-.social-links a:hover {
+.social_links a:hover {
     text-decoration: underline;
 }
 
-html:not(.inverted) .social-links a {
+html:not(.inverted) .social_links a {
     color: var(--dark-link);
 }
 
@@ -727,6 +721,53 @@ html:not(.inverted) .blog_post_skeleton_content {
 
 .blog_post_link:hover {
     text-decoration: underline;
+}
+
+/* CTA Cards */
+.cta-cards {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.cta-card {
+    border: 1px solid rgb(191, 190, 190);
+    border-radius: 8px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 0 1 100px;
+    /* min-width: 120px; */
+}
+
+.cta-card h3 {
+    font-size: 0.9rem;
+    margin: 0px !important;
+    color: var(--light-text);
+}
+
+.cta-card a {
+    color: var(--light-link);
+    /* text-decoration: none; */
+    font-size: 0.85rem;
+}
+
+html:not(.inverted) .cta-card {
+    border: 1px solid rgb(65, 64, 64);
+}
+
+html:not(.inverted) .cta-card h3 {
+    color: var(--dark-text);
+}
+
+html:not(.inverted) .cta-card p {
+    color: #adb5bd;
+}
+
+html:not(.inverted) .cta-card a {
+    color: var(--dark-link);
 }
 
 
